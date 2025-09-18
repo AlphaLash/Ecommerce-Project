@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZeroMart - Home</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div class="container header-flex">
+    <!-- Logo with Image -->
+    <a href="index.html" class="logo">
+      <img src="./assets/logoz.png" alt="ZeroMart Logo" class="logo-img">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to ZeroMart</h2>
+      <p>Your one-stop shop for everything!</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products container">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Professional Bike" data-price="40">
+        <img src="./assets/bike.jpeg" alt="bike product">
+        <h3>Professional Bike</h3>
+        <p>₹40</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-name="Sneakers" data-price="449">
+        <img src="./assets/sneakers.jpeg" alt="Men Sneakers">
+        <h3>Sneakers</h3>
+        <p>₹449</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-name="Jeans" data-price="999">
+        <img src="./assets/shop men.jpeg" alt="Men Jeans">
+        <h3>Jeans</h3>
+        <p>₹999</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-name="Steel Bottle" data-price="456">
+        <img src="./assets/bottled.jpeg" alt="Steel bottle">
+        <h3>Steel Bottle</h3>
+        <p>₹456</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal hidden">
+    <div class="cart-content">
+      <span id="close-cart">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: ₹<span id="cart-total">0</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ZeroMart. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
